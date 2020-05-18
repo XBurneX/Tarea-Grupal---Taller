@@ -29,4 +29,22 @@ public class PlayerController : MonoBehaviour
 
         transform.position = new Vector3(transform.position.x + (h * s), transform.position.y, transform.position.z + (v * s));
     }
+
+    private void OnTriggerEnter(Collider obj)
+    {
+        if (obj.gameObject.CompareTag("MinusLive"))
+        {
+            Debug.Log("disminuyendo vida");
+            GetComponent<MODELO>().LifeToAdd = GetComponent<MODELO>().LifeToAdd - GetComponent<MODELO>().LifepenaltyOnEnter;
+        }
+
+        if (obj.gameObject.CompareTag("PlusLive"))
+        {
+            Debug.Log("Aumentando Vida");
+            GetComponent<MODELO>().LifeToAdd = GetComponent<MODELO>().LifeToAdd + GetComponent<MODELO>().LifepenaltyOnEnter;
+            
+        }
+
+
+    }
 }
