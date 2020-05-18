@@ -3,29 +3,27 @@
 
 ExportedObj/
 .consulo/
-*.csproj
-*.unityproj
-*.sln
-*.suo
-*.tmp
-*.user
-*.userprefs
-*.pidb
-*.booproj
-*.svd
-*.pdb
-*.opendb
-*.VC.db
+.csproj
+.unityproj
+.sln
+.suo
+.tmp
+.user
+.userprefs
+.pidb
+.booproj
+.svd
+.pdb
+.opendb
+.VC.db
 
 
-*.pidb.meta
-*.pdb.meta
+.pidb.meta
+.pdb.meta
 
 
 sysinfo.txt
 
-*.apk
-*.unitypackage
+.apk
+.unitypackage
 
-
-Assets/StreamingAssets/crashlytics-build.properties
