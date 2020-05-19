@@ -4,7 +4,6 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class MODELO : MonoBehaviour {
-    public static int Score;
     Text text;
     public float MoveVelocity;
     public int LifeToAdd;
